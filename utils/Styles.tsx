@@ -80,5 +80,14 @@ export const styles = StyleSheet.create({
         padding: 12,
         margin: 12,
         borderRadius: 20,
-    }
+    },
+
+    input: {
+        width: 130,
+        height: 30,
+        padding: 10,
+        margin: 12,
+        borderRadius: 20,
+        overflow: "hidden",
+    },
 });
