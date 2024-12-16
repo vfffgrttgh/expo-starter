@@ -5,8 +5,7 @@ export const styles = StyleSheet.create({
         display: 'flex',
         flex: 1,
         backgroundColor: 'cyan',
-        alignItems: 'center',
-        justifyContent: 'center',
+        alignContent: "center",
     },
 
     blueButton: {
@@ -83,11 +82,15 @@ export const styles = StyleSheet.create({
     },
 
     input: {
-        width: 130,
-        height: 30,
+        width: 150,
+        height: 60,
         padding: 10,
         margin: 12,
         borderRadius: 20,
         overflow: "hidden",
+        color: "white",
+        fontWeight: 700,
+        fontSize: 30,
+        backgroundColor: "black",
     },
 });

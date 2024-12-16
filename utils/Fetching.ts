@@ -1,7 +1,7 @@
 import { db, postingData } from "./Database";
 
 // FETCHING
-export function GET(type: string) {
+export async function GET(type: string) {
     if(type === "XML") {
         return db.xml;
     } else if(type === "USERS") {
@@ -9,7 +9,7 @@ export function GET(type: string) {
     }
 };
 
-export function POST({ id, value, type }: postingData) {
+export async function POST({ id, value, type }: postingData) {
     if(type === "XML") {
         db.xml.push({ id: id, value: value});
     } else if(type === "USERS") {
