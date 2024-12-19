@@ -7,10 +7,10 @@ import Loader from "./Loader";
 export default function Aoblox() {
     return (
         <Suspense fallback={<Loader />}>
-            <ScrollView scrollEnabled={true}>
+            <ScrollView>
                 <WebView
                     source={{ uri: "https://aoby-jalalabad.netlify.app" }}
-                    style={{ width: 350, height: 1000, margin: 20 }}
+                    style={{ width: 350, height: 2600, margin: 20 }}
                 />
             </ScrollView>
         </Suspense>

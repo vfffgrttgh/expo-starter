@@ -1,8 +1,9 @@
-import { Linking, ScrollView, Text, View } from 'react-native';
-import { styles } from './utils/Styles';
-import Profile from './components/Profile';
+import { ScrollView, Text, View } from 'react-native';
+import { styles } from '../utils/Styles';
+import Profile from '../components/Profile';
 import React from 'react';
-import Img from './components/Img';
+import Img from '../components/Img';
+import { Link } from 'expo-router';
 
 export default function App() {
   return (
@@ -21,9 +22,10 @@ export default function App() {
         <Text style={{ color: "teal", fontSize: 25, fontWeight: 700, margin: 20 }}>
           With this minimal setup, you can go ahead and kickstart your Expo and React Native journey!
         </Text>
-        <Text style={{ color: "teal", fontSize: 25, fontWeight: 700, margin: 20 }}>
-          You can start by studying how all this works with the components/ and the utils/ folders. You can study the backend and Frontend.
-        </Text>
+        <Link href="/fetch" style={{ color: "teal", fontSize: 25, fontWeight: 700, margin: 20 }}>Try Fetching</Link>
+        <Link href="/maps" style={{ color: "teal", fontSize: 25, fontWeight: 700, margin: 20 }}>Try Maps</Link>
+        <Link href="/webview" style={{ color: "teal", fontSize: 25, fontWeight: 700, margin: 20 }}>Try WebView</Link>
+        <Link href="/form" style={{ color: "teal", fontSize: 25, fontWeight: 700, margin: 20 }}>Try Form Demo</Link>
       </ScrollView>
     </>
   );

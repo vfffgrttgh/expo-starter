@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "saxena-flix",
+    "scheme": "saxena-flix",
     "slug": "saxena-flix",
     "version": "1.0.0",
     "orientation": "portrait",

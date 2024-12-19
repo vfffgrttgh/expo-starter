@@ -1,5 +1,5 @@
 export type postingData = {
-    id?: number | string;
+    id?: any;
     value?: number | string;
     type?: string
 };
