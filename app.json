@@ -1,13 +1,18 @@
 {
   "expo": {
-    "name": "saxena-flix",
-    "scheme": "saxena-flix",
-    "slug": "saxena-flix",
+    "name": "ffify",
+    "scheme": "ffify",
+    "slug": "ffify",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
@@ -20,13 +25,20 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.aayansh123.ffify"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      }
+    },
+    "owner": "aayansh123"
   }
 }

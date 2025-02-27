@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>iPhone 16</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    /* Container for the iPhone frame */
+    .iphone-frame {
+      position: relative;
+      width: 375px;
+      height: 667px;
+      border-radius: 36px;
+      overflow: hidden;
+    }
+
+    /* Background image positioned absolutely */
+    .iphone-frame img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2; /* Ensure the image is below the iframe */
+      pointer-events: none; /* Make sure the image does not block interactions */
+    }
+
+    .screen {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .screen iframe {
+      width: 350px;
+      height: 650px;
+      border: none;
+      z-index: 1;
+      border-radius: 36px;
+    }
+  </style>
+</head>
+<body>
+  <div class="iphone-frame">
+    <!-- Background image for the frame -->
+    <img src="./iphone.png" alt="iPhone Frame">
+    <div class="screen">
+        <iframe src="http://localhost:8081"></iframe>
+    </div>
+  </div>
+</body>
+</html>

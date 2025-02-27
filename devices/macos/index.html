@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MacBook Preview</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+      font-family: sans-serif;
+    }
+
+    .mac-frame {
+        width: 80%;
+        height: 90%;
+        border: 10px solid #000000;
+        border-radius: 15px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 95.5%;
+        border: none;
+        border-radius: 5px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .topbar {
+        width: 100%;
+        height: 30px;
+        background-color: #000000;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: flex-start;
+        width: 100px;
+        margin-right: 10px;
+        gap: 10px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .close {
+        transition: 0.7s background-color;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #ff5f56;
+        color: white;
+        padding: 5px;
+    }
+
+    .minimize {
+        transition: 0.7s background-color;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #f7cf3d;
+        color: white;
+        padding: 5px;
+    }
+
+    .maximize {
+        transition: 0.7s background-color;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #3df75c;
+        color: white;
+        padding: 5px;
+    }
+
+    .close:hover {
+        background-color: #ff0d00;
+    }
+
+    .minimize:hover {
+        background-color: #ffc800;
+    }
+
+    .maximize:hover {
+        background-color: #00ff2a;
+    }
+</style>
+</head>
+<body>
+  <div class="mac-frame">
+    <div class="topbar">
+        <div class="buttons">
+            <div class="close">X</div>
+            <div class="minimize">-</div>
+            <div class="maximize">O</div>
+        </div>
+    </div>
+    <iframe src="http://localhost:8081" class=""></iframe>
+  </div>
+</body>
+</html>
